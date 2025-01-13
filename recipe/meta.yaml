@@ -19,7 +19,6 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - momentchi2
   run:
     - python >={{ python_min }}
     - numpy
@@ -32,12 +31,12 @@ requirements:
     - networkx
     - pydot
     - tqdm
-    - momentchi2
 
 test:
   imports:
     - causallearn
   commands:
+    - pip install momentchi2
     - pip check
   requires:
     - pip
