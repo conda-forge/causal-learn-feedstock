@@ -1,5 +1,5 @@
 {% set name = "causal-learn" %}
-{% set version = "0.1.4.4" %}
+{% set version = "0.1.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 82e65ba9593a31b0a33b5f313e5b824c0763de3a8da2a062458f6c12bd46017e
+  sha256: dfdeef2eaae246319501b5340e9bae749be6eaa6cde64ebeb0e627dec8813e05
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
