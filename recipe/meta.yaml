@@ -1,5 +1,5 @@
 {% set name = "causal-learn" %}
-{% set version = "0.1.4.5" %}
+{% set version = "0.1.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: dfdeef2eaae246319501b5340e9bae749be6eaa6cde64ebeb0e627dec8813e05
+  sha256: 777762d1c599030a4fb9069f7780d6199780c2251f722bd5ed89876291f35cb9
 
 build:
   noarch: python
@@ -32,6 +32,7 @@ requirements:
     - pydot
     - tqdm
     - momentchi2
+    - joblib
 
 test:
   imports:
