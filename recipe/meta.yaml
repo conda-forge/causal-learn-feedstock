@@ -32,6 +32,7 @@ requirements:
     - pydot
     - tqdm
     - momentchi2
+    - communities
 
 test:
   imports:
